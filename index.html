@@ -5,27 +5,27 @@
     <meta charset="UTF-8" />
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Movizio - Your ultimate movie streaming platform. Discover upcoming movies, trailers, and release dates. Browse films by genre, date, and region with a fast, modern interface." />
-    <meta name="keywords" content="Movizio, movie streaming, upcoming movies, movie releases, trailers, movie discovery, film catalog, cinema, entertainment" />
-    <meta name="author" content="Movizio" />
+    <meta name="description" content="Moviozio - Discover movies and TV shows. Browse trending, upcoming releases, top-rated content, and more with our modern streaming platform powered by TMDB." />
+    <meta name="keywords" content="Moviozio, movies, TV shows, streaming, TMDB, movie database, entertainment, cinema, watch movies" />
+    <meta name="author" content="Moviozio" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <link rel="canonical" href="https://movizio.vercel.app/" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@britinogn" />
-    <meta name="twitter:title" content="Movizio — Your Cinematic Experience" />
-    <meta name="twitter:description" content="Discover and stream movies with Movizio. Browse upcoming releases, watch trailers, and explore films by genre." />
-    <meta name="twitter:image" content="https://movizio.vercel.app/img/movizio-og.png" />
+    <meta name="twitter:title" content="Moviozio — Discover Movies & TV Shows" />
+    <meta name="twitter:description" content="Your ultimate destination for discovering movies and TV shows. Powered by TMDB with real-time updates." />
+    <meta name="twitter:image" content="https://movizio.vercel.app/img/og-image.png" />
     
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Movizio" />
-    <meta property="og:title" content="Movizio — Your Cinematic Experience" />
-    <meta property="og:description" content="Stream and discover movies on Movizio. Explore upcoming releases, watch trailers, and browse by genre with our modern platform." />
+    <meta property="og:site_name" content="Moviozio" />
+    <meta property="og:title" content="Moviozio — Discover Movies & TV Shows" />
+    <meta property="og:description" content="Your ultimate destination for discovering movies and TV shows. Browse trending content, upcoming releases, and top-rated films." />
     <meta property="og:url" content="https://movizio.vercel.app/" />
-    <meta property="og:image" content="https://movizio.vercel.app/img/movizio-og.png" />
-    <meta property="og:image:alt" content="Movizio - Movie Streaming Platform" />
+    <meta property="og:image" content="https://movizio.vercel.app/img/og-image.png" />
+    <meta property="og:image:alt" content="Moviozio - Movie Discovery Platform" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -34,9 +34,6 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    
-    <!-- Vue.js -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
     
     <title>Movizio — Your Cinematic Experience | Stream Movies & Discover New Releases</title>
   </head>
@@ -52,46 +49,36 @@
       "@graph": [
         {
           "@type": "Organization",
-          "name": "Movizio",
-          "alternateName": "Movizio Movie Platform",
+          "name": "Moviozio",
           "url": "https://movizio.vercel.app/",
-          "logo": "https://movizio.vercel.app/img/movizio-logo.png",
-          "description": "Your cinematic experience - discover and stream movies",
+          "logo": "https://movizio.vercel.app/img/eboylogo2.png",
+          "description": "Discover movies and TV shows with real-time data from TMDB",
           "sameAs": [
-            "https://twitter.com/YourTwitterHandle",
-            "https://github.com/YourGithubHandle"
+            "https://github.com/Britinogn",
+            "https://www.linkedin.com/in/britinogn"
           ]
         },
         {
           "@type": "WebSite",
           "url": "https://movizio.vercel.app/",
-          "name": "Movizio",
-          "description": "Movizio - Your ultimate movie streaming platform. Discover upcoming movies, trailers, and browse by genre.",
+          "name": "Moviozio",
+          "description": "Discover and explore movies and TV shows. Browse trending content, upcoming releases, and top-rated films powered by TMDB.",
           "publisher": { 
             "@type": "Organization", 
-            "name": "Movizio" 
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://movizio.vercel.app/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
+            "name": "Moviozio" 
           }
         },
         {
           "@type": "WebApplication",
-          "name": "Movizio",
+          "name": "Moviozio",
           "url": "https://movizio.vercel.app/",
           "applicationCategory": "EntertainmentApplication",
           "operatingSystem": "Any",
+          "browserRequirements": "Requires JavaScript",
           "offers": {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1250"
           }
         }
       ]
