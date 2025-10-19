@@ -31,7 +31,7 @@ const goBack = () => {
       <!-- Hero Section -->
       <section class="text-center space-y-6">
         <h1 class="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-purple-600 bg-clip-text text-transparent">
-          Welcome to Moviozio
+          Welcome to Movizio
         </h1>
         <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
           Your ultimate destination for discovering movies and TV shows. Powered by the comprehensive 
@@ -46,7 +46,7 @@ const goBack = () => {
             Our Mission
           </h2>
           <p class="text-lg text-gray-300 leading-relaxed">
-            We believe everyone deserves easy access to quality entertainment. Moviozio simplifies movie discovery, 
+            We believe everyone deserves easy access to quality entertainment. Movizio simplifies movie discovery, 
             bringing you the latest releases, timeless classics, and everything in between.
           </p>
           <p class="text-lg text-gray-300 leading-relaxed">
@@ -182,7 +182,7 @@ const goBack = () => {
       <!-- Footer -->
       <footer class="text-center space-y-6 pt-12 border-t border-purple-500/10">
         <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-          MOVIOZIO
+          Movizio
         </h3>
         <p class="text-gray-400 max-w-md mx-auto">
           Bringing the world of cinema to your fingertips.
@@ -217,7 +217,7 @@ const goBack = () => {
           </a>
         </div>
         <p class="text-sm text-gray-500">
-          © {{ new Date().getFullYear() }} <span class="text-purple-400 font-semibold">EboyMovie</span>. 
+          © {{ new Date().getFullYear() }} <span class="text-purple-400 font-semibold">Movizio</span>. 
           Powered by TMDB API.
         </p>
       </footer>

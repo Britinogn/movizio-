@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import TrailerModal from '../components/TrailerModal.vue';
 
 const route = useRoute();
 const router = useRouter();
@@ -20,6 +21,7 @@ const recommendations = ref([]);
 const loading = ref(true);
 const error = ref(null);
 const activeTab = ref('overview');
+const showTrailerModal = ref(false);
 
 // Computed
 const isLoggedIn = computed(() => !!localStorage.getItem('token'));
@@ -279,7 +281,7 @@ onMounted(() => {
 
               <!-- Watch Trailer Button -->
               <div v-if="trailerKey" class="flex gap-4">
-                <a 
+                <!-- <button 
                   :href="`https://www.youtube.com/watch?v=${trailerKey}`"
                   target="_blank"
                   class="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-lg font-semibold transition-all duration-300 shadow-lg"
@@ -288,7 +290,17 @@ onMounted(() => {
                     <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
                   </svg>
                   Watch Trailer
-                </a>
+                </button> -->
+
+                <button 
+                  @click="showTrailerModal = true"
+                  class="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-lg font-semibold transition-all duration-300 shadow-lg"
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                  </svg>
+                  Watch Trailer
+                </button>
               </div>
             </div>
           </div>
@@ -485,6 +497,13 @@ onMounted(() => {
         </div>
       </div>
     </div>
+
+    <TrailerModal 
+      :show="showTrailerModal" 
+      :trailer-key="trailerKey" 
+      @close="showTrailerModal = false" 
+    />
+  
   </div>
 </template>
 
