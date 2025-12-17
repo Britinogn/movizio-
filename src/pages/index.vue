@@ -135,12 +135,12 @@ onMounted(() => {
           <h2 class="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
             Now Playing
           </h2>
-          <button
+          <!-- <button
             @click="handleShowMore('/movies/now-playing')"
             class="px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.5)]"
           >
             Show More
-          </button>
+          </button> -->
         </div>
         <div class="overflow-x-auto scrollbar-hide">
           <div class="flex space-x-4 pb-4">
