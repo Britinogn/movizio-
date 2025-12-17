@@ -104,13 +104,13 @@ onMounted(() => {
         <div class="flex gap-4 justify-center pt-6">
           <router-link
             to="/register"
-            class="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] transition-all duration-300 hover:scale-105"
+            class="px-4 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-tr-2xl rounded-bl-2xl font-bold text-md hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] transition-all duration-300 hover:scale-105"
           >
             Get Started Now
           </router-link>
           <router-link
             to="/login"
-            class="px-8 py-4 bg-white/10 backdrop-blur-sm border border-purple-500/30 rounded-full font-bold text-lg hover:bg-white/20 transition-all duration-300"
+            class="px-6 py-4 bg-white/10 backdrop-blur-sm border border-purple-500/30 rounded-tr-2xl rounded-bl-2xl font-bold text-md hover:bg-white/20 transition-all duration-300"
           >
             Sign In
           </router-link>
@@ -135,12 +135,12 @@ onMounted(() => {
           <h2 class="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
             Now Playing
           </h2>
-          <!-- <button
+          <button
             @click="handleShowMore('/movies/now-playing')"
             class="px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.5)]"
           >
             Show More
-          </button> -->
+          </button>
         </div>
         <div class="overflow-x-auto scrollbar-hide">
           <div class="flex space-x-4 pb-4">

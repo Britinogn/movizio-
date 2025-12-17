@@ -76,9 +76,9 @@ onUnmounted(() => {
       >
         <img
           src="/img/moviziologo.png"
-          alt="EboyMovie"
+          alt="Movizio"
           class="w-[60px] md:w-[75px] transition-all duration-500 drop-shadow-[0_0_20px_rgba(168,85,247,0.4)] 
-                 group-hover:drop-shadow-[0_0_35px_rgba(236,72,153,0.7)] group-hover:scale-110"
+            group-hover:drop-shadow-[0_0_35px_rgba(236,72,153,0.7)] group-hover:scale-110"
         />
         <span
           class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 tracking-widest hidden sm:block"
@@ -134,7 +134,7 @@ onUnmounted(() => {
               >
                 Sign Up
                 <span
-                  class="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-500"
+                  class="absolute bottom-0 left-0 w-0 h-[2px]  bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-500"
                 ></span>
               </router-link>
             </li>
